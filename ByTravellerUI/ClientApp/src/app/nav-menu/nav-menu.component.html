@@ -1,0 +1,31 @@
+<header class="header-6">
+  <div class="branding">
+    <a class="nav-link" [routerLink]='["/"]'>
+      <clr-icon shape="vm-bug"></clr-icon>
+      <span class="title">byTraveller</span>
+    </a>
+  </div>
+  <div class="header-nav">
+    <a class="active nav-link nav-text" [routerLink]='["/"]'>Home</a>
+    <a class="nav-link nav-text" [routerLink]='["/"]'>Destination</a>
+    <a class="nav-link nav-text" [routerLink]='["/"]'>Gallery</a>
+    <a class="nav-link nav-text" [routerLink]='["/"]'>About</a>
+  </div>
+  <div class="header-actions">
+    <a *ngIf="isLoggedIn == false; else elseBlock"  class="nav-link nav-icon" [routerLink]='["/login"]'>
+      <clr-icon shape="user"></clr-icon>
+    </a>
+    <ng-template #elseBlock>
+      <clr-dropdown>
+        <button class="nav-text" clrDropdownTrigger>
+            {{userData?.email}}
+            <clr-icon shape="caret down"></clr-icon>
+        </button>
+        <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+            <a href="..." clrDropdownItem>Preferences</a>
+            <a clrDropdownItem (click)="logOut()">Log out</a>
+        </clr-dropdown-menu>
+      </clr-dropdown>
+    </ng-template>
+  </div>
+</header>

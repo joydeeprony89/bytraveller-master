@@ -1,0 +1,17 @@
+﻿extensions: .cs
+//---------------------------------------------------------------------------------------------
+// <copyright file= %FileName% company= ByTraveller>
+// Copyright © %CreationYear% ByTraveller. All rights reserved.
+// </copyright>
+//---------------------------------------------------------------------------------------------
+
+extensions: .aspx .ascx
+<%-- 
+Copyright (c) 2011 rubicon IT GmbH
+--%>
+extensions: .vb
+'Sample license text.
+extensions:  .xml .config .xsd
+<!--
+Sample license text.
+-->

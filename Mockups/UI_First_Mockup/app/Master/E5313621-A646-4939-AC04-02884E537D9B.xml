@@ -1,0 +1,70 @@
+<master version="5.3" minAllowVersion="5.3" ID="E5313621-A646-4939-AC04-02884E537D9B">
+  <controls>
+    <control controlID="8EB8896F-7474-4312-A2C3-086B4D2C230F" controlTypeID="Master" x="945" y="1712" w="372" h="565" zOrder="85" masterID="E5313621-A646-4939-AC04-02884E537D9B">
+      <groupChildrenDescriptors>
+        <control controlID="B4F7EED8-256D-4941-9162-7247982581BC" controlTypeID="__group__" x="0" y="0" w="372" h="565" zOrder="0">
+          <groupChildrenDescriptors>
+            <control controlID="DB86A2D9-AFD4-4444-A5A7-5260E7B50491" controlTypeID="TextArea" x="2" y="426" w="369" h="83" zOrder="0">
+              <font family="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" displayName="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <text>Photoshop+CC+is+now+even+more+intuitive+with+new+features+that+give+you+more+control+over+your+design.+Check+out+the+reimagined+Content-Aware+Fill%2C+new+Framing+tool%2C+Symmetry+mode%2C+and+more.</text>
+              <textColor>4284900966</textColor>
+              <textAlign>HaCenter</textAlign>
+              <useDefaultTextSize>False</useDefaultTextSize>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="C08EFC44-E832-4301-AE0F-59B13DADCD09" controlTypeID="TextArea" x="2" y="333" w="369" h="93" zOrder="1">
+              <states>
+                <state propName="Alpha100" stateType="state_mouseOver" isChecked="True" value="80" varType="4"/>
+              </states>
+              <font family="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" displayName="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <text>More+control+with+Content-Aware+Fill</text>
+              <textColor>4281545523</textColor>
+              <textSize>30</textSize>
+              <textAlign>HaCenter</textAlign>
+              <useDefaultTextSize>False</useDefaultTextSize>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="5745F0AD-57FA-4E13-9205-53B31E384F10" controlTypeID="Label" x="130" y="297" w="194" h="22" zOrder="2">
+              <states>
+                <state propName="Alpha100" stateType="state_mouseOver" isChecked="True" value="80" varType="4"/>
+              </states>
+              <font family="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" displayName="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91+Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+              <text>ADOBE+PHOTOSHOP+CC</text>
+              <textColor>4279397076</textColor>
+              <textSize>16</textSize>
+              <lineSpacing>0</lineSpacing>
+              <textStyles>[fsBold]</textStyles>
+              <useDefaultTextSize>False</useDefaultTextSize>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="E702C586-E469-423C-B166-084D90B5C955" controlTypeID="Button" x="126" y="525" w="120" h="40" zOrder="3">
+              <states>
+                <state propName="Alpha100" stateType="state_mouseOver" isChecked="True" value="80" varType="4"/>
+              </states>
+              <color>4279397076</color>
+              <borderVisible>False</borderVisible>
+              <font family="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" displayName="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <text>Download</text>
+              <textColor>4294967295</textColor>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+              <radius>4</radius>
+            </control>
+            <control controlID="077FD258-F87C-4511-BD0E-93E9EBEF8086" controlTypeID="Image" x="0" y="0" w="372" h="267" zOrder="4"/>
+            <control controlID="69386FB5-A680-468E-86C2-54D30C2422BF" controlTypeID="Icon" x="146" y="94" w="80" h="80" zOrder="5">
+              <states>
+                <state propName="Alpha100" stateType="state_mouseOver" isChecked="True" value="90" varType="4"/>
+              </states>
+              <icon>
+                <ID/>
+                <iconFontName>jdIonicons</iconFontName>
+                <iconCode>62306</iconCode>
+              </icon>
+              <URL>9DDACFA1CF56DBAEDCDB44BD9EE77A8A.svg</URL>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</master>

@@ -1,0 +1,14 @@
+<svg width="1200" height="550" xmlns="http://www.w3.org/2000/svg">
+ <title>Bootstrap</title>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="552" width="1202" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text font-style="italic" font-weight="bold" stroke="null" transform="matrix(16.474500888570102,0,0,20.954855615033747,-2501.01418778351,-5131.058945874775) " xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="32" id="svg_4" y="267.317882" x="151.697786" stroke-opacity="null" stroke-width="0" fill="#ff7f00">B</text>
+  <text font-style="italic" font-weight="bold" stroke="null" transform="matrix(3.5405919854896486,0,0,11.033481027620695,-1918.1462546393325,-3332.2915720404308) " xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="32" id="svg_6" y="344.867642" x="725.265249" stroke-opacity="null" stroke-width="0" fill="#ffffff">Traveller</text>
+  <text font-style="italic" font-weight="bold" stroke="null" transform="matrix(16.75219192433521,0,0,21.075659454362086,-7548.343246251129,-3026.291933518534) " xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="32" id="svg_7" y="166.023143" x="470.833827" stroke-opacity="null" stroke-width="0" fill="#ff7f00">Y</text>
+ </g>
+</svg>

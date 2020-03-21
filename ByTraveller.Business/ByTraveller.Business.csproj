@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <Reference Include="ByTraveller.Model">
+      <HintPath>..\ByTraveller.Model\bin\Debug\netcoreapp2.2\ByTraveller.Model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <Reference Include="ByTraveller.Business">
+      <HintPath>..\ByTraveller.Business\bin\Debug\netcoreapp2.2\ByTraveller.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="ByTraveller.Core">
+      <HintPath>..\ByTraveller.Core\bin\Debug\netstandard2.0\ByTraveller.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ByTraveller.Model">
+      <HintPath>..\ByTraveller.Model\bin\Debug\netcoreapp2.2\ByTraveller.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="ByTraveller.Provider">
+      <HintPath>..\ByTraveller.Provider\bin\Debug\netcoreapp2.2\ByTraveller.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="ByTraveller.ProviderImpl">
+      <HintPath>..\ByTraveller.ProviderImpl\bin\Debug\netcoreapp2.2\ByTraveller.ProviderImpl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

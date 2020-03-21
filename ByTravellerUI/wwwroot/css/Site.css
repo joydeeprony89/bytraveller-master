@@ -1,0 +1,14 @@
+﻿body {
+}
+.traveller-logo {
+    margin-right: 11px;
+    height: 30px;
+    width: 150px
+}
+.bg-dark-traveller {
+    background-color: #002538 !important;
+}
+
+.table  .table-description-width-30 {
+    width: 30%;
+}

@@ -1,0 +1,64 @@
+﻿@page
+@model ByTravellerUI.Pages.HeaderMenu.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HeaderMainMenu</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.Index)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.Index)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.IsActive)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.IsActive)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.CreatedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.CreatedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.ModifiedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.ModifiedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.CreatedOn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.CreatedOn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.ModifiedOn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.ModifiedOn)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="HeaderMainMenu.HeaderMainMenuId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

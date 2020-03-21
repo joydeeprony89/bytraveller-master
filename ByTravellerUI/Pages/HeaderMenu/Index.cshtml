@@ -1,0 +1,49 @@
+﻿@page
+@model ByTravellerUI.Pages.HeaderMenu.IndexModel
+
+@{
+    ViewData["Title"] = "Headers Menu";
+}
+
+<h2>Main menu components</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HeaderMainMenu[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeaderMainMenu[0].Index)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeaderMainMenu[0].IsActive)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.HeaderMainMenu)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Index)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>
+                <td>
+                    <a class="btn btn-outline-success" asp-page="./Edit" asp-route-id="@item.HeaderMainMenuId">Edit</a>
+                    <a class="btn btn-outline-success" asp-page="./Details" asp-route-id="@item.HeaderMainMenuId">Details</a>
+                    <a class="btn btn-outline-warning" asp-page="./Delete" asp-route-id="@item.HeaderMainMenuId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <div class="dropdown-divider"></div>
+    <a class="btn btn-outline-success" asp-page="Create">Create Main Menu</a>
+</div>

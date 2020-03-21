@@ -1,0 +1,60 @@
+﻿@page
+@model ByTravellerUI.Pages.Card.IndexModel
+
+@{
+    ViewData["Title"] = "Cards";
+}
+
+<h3>Cards Details</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Card[0].Name)
+            </th>
+            <th class="table-description-width-30">
+                @Html.DisplayNameFor(model => model.Card[0].ShortDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Card[0].IsActive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Card[0].SubMenuItem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Card[0].ImageUploaded)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Card) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td class="text-justify">
+                @Html.DisplayFor(modelItem => item.ShortDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubMenuItem.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUploaded)
+            </td>
+            <td>
+                <a class="btn btn-outline-success" asp-page="./Edit" asp-route-id="@item.CardId">Edit</a>
+                <a class="btn btn-outline-success" asp-page="./Details" asp-route-id="@item.CardId">Details</a>
+                <a class="btn btn-outline-warning" asp-page="./Delete" asp-route-id="@item.CardId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    <div class="dropdown-divider"></div>
+    <a class="btn btn-outline-success" asp-page="Create">Create New Card</a>
+</div>

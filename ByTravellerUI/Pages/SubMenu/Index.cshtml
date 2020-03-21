@@ -1,0 +1,57 @@
+﻿@page
+@model ByTravellerUI.Pages.SubMenu.IndexModel
+
+@{
+    ViewData["Title"] = "Sub Menu";
+}
+
+<h2>Sub menu components</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HeaderSubMenu[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeaderSubMenu[0].Index)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeaderSubMenu[0].IsActive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeaderSubMenu[0].HeaderMainMenu.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.HeaderSubMenu)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Index)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HeaderMainMenu.Name)
+                </td>
+                
+                <td>
+                    <a class="btn btn-outline-success" asp-page="./Edit" asp-route-id="@item.HeaderSubMenuId">Edit</a>
+                    <a class="btn btn-outline-success" asp-page="./Details" asp-route-id="@item.HeaderSubMenuId">Details</a>
+                    <a class="btn btn-outline-warning" asp-page="./Delete" asp-route-id="@item.HeaderSubMenuId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <div class="dropdown-divider"></div>
+    <a class="btn btn-outline-success" asp-page="Create">Create Sub Menu</a>
+</div>

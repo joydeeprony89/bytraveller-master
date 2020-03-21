@@ -1,0 +1,70 @@
+﻿@page
+@model ByTravellerUI.Pages.SubMenu.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HeaderSubMenu</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderSubMenu.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderSubMenu.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderSubMenu.Index)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderSubMenu.Index)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderSubMenu.IsActive)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderSubMenu.IsActive)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderSubMenu.HeaderMainMenu)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderSubMenu.HeaderMainMenu.HeaderMainMenuId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderSubMenu.CreatedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderSubMenu.CreatedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderSubMenu.ModifiedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderSubMenu.ModifiedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderSubMenu.CreatedOn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderSubMenu.CreatedOn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderSubMenu.ModifiedOn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderSubMenu.ModifiedOn)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="HeaderSubMenu.HeaderSubMenuId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

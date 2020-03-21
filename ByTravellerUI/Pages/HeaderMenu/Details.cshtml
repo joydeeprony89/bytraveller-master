@@ -1,0 +1,59 @@
+﻿@page
+@model ByTravellerUI.Pages.HeaderMenu.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h4>Header Main Menu</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.Index)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.Index)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.IsActive)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.IsActive)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.CreatedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.CreatedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.ModifiedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.ModifiedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.CreatedOn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.CreatedOn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HeaderMainMenu.ModifiedOn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HeaderMainMenu.ModifiedOn)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-outline-success" asp-page="./Edit" asp-route-id="@Model.HeaderMainMenu.HeaderMainMenuId">Edit</a>
+    <a class="btn btn-outline-success" asp-page="./Index">Back to List</a>
+</div>

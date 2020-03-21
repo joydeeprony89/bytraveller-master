@@ -1,0 +1,43 @@
+﻿@page
+@model ByTravellerUI.Pages.MenuItem.IndexModel
+
+@{
+    ViewData["Title"] = "Menu Items";
+}
+
+<h2>Menu Items</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SubMenuItem[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubMenuItem[0].HeaderSubMenu.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SubMenuItem) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.HeaderSubMenu.Name)
+            </td>
+            <td>
+                <a class="btn btn-outline-success" asp-page="./Edit" asp-route-id="@item.SubMenuItemId">Edit</a> 
+                @*<a class="btn btn-outline-success" asp-page="./Details" asp-route-id="@item.SubMenuItemId">Details</a>*@ 
+                <a class="btn btn-outline-warning" asp-page="./Delete" asp-route-id="@item.SubMenuItemId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    <div class="dropdown-divider"></div>
+    <a class="btn btn-outline-success" asp-page="Create">Create Menu Item</a>
+</div>

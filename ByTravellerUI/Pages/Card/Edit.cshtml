@@ -1,0 +1,84 @@
+﻿@page
+@model ByTravellerUI.Pages.Card.EditModel
+
+@{
+    ViewData["Title"] = "Edit Card";
+}
+<h4>Edit Card</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Card.CardId" />
+            <div class="form-group">
+                <label asp-for="Card.Name" class="control-label"></label>
+                <input asp-for="Card.Name" class="form-control" />
+                <span asp-validation-for="Card.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.ShortDescription" class="control-label"></label>
+                <textarea asp-for="Card.ShortDescription" class="form-control"></textarea>
+                <span asp-validation-for="Card.ShortDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Card.IsActive" /> @Html.DisplayNameFor(model => model.Card.IsActive)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.SubMenuItemId" class="control-label"></label>
+                <select asp-for="Card.SubMenuItemId" class="form-control" asp-items="ViewBag.SubMenuItemId"></select>
+                <span asp-validation-for="Card.SubMenuItemId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.ImagePath" class="control-label"></label>
+                <div class="input-group">
+                    <label class="input-group-btn">
+                        <span class="btn btn-outline-info">
+                            Browse&hellip; <input type="file" asp-for="Card.ImageFile" style="display: none;">
+                        </span>
+                    </label>
+                    <input type="text" class="form-control" readonly>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-outline-success" />
+                <a class="btn btn-outline-success" asp-page="./Index">Back to Card List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script type="text/javascript">
+    $(function() {
+
+  // We can attach the `fileselect` event to all file inputs on the page
+  $(document).on('change', ':file', function() {
+    var input = $(this),
+        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [numFiles, label]);
+  });
+
+  // We can watch for our custom `fileselect` event like this
+  $(document).ready( function() {
+      $(':file').on('fileselect', function(event, numFiles, label) {
+
+          var input = $(this).parents('.input-group').find(':text'),
+              log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+          if( input.length ) {
+              input.val(log);
+          } else {
+              if( log ) alert(log);
+          }
+
+      });
+  });
+
+});
+</script>
